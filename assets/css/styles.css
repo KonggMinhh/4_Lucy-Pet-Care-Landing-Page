@@ -4,11 +4,12 @@
 
 html {
     font-size: 62.5%;
-    font-family: "Poppins", sans-serif;
 }
 
 body {
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background: #fffaf5;
 }
 
 /* Common */
@@ -85,4 +86,114 @@ button {
 .header__action-btn {
     --height: 50px;
     min-width: 117px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 78px;
+}
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__media {
+    position: relative;
+    display: flex;
+    padding-bottom: 94px;
+}
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 388px;
+    height: 488px;
+    background: #fe997b;
+    border: 3px solid #fff;
+    border-radius: 16px;
+}
+.hero__img {
+    position: absolute;
+    min-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+.hero__decor {
+    position: absolute;
+    z-index: -1;
+}
+.hero__decor-left {
+    left: -60px;
+    bottom: 10px;
+}
+.hero__decor-right {
+    top: 17px;
+    right: -43px;
+}
+
+.hero__img-small {
+    padding-top: 24px;
+}
+.hero__img-wrap-small {
+    max-width: 186px;
+    max-height: 244px;
+    margin: 0 0 -58px -23px;
+    background: #faa7ad;
+    border: 2px solid #fde0e2;
+    align-self: flex-end;
+}
+
+.hero__list {
+    position: absolute;
+    padding: 14px 18px;
+    width: 250px;
+    height: 156px;
+    bottom: 0;
+    left: 129px;
+    background: #ffffff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+    border-radius: 10px;
+}
+
+.hero-list-item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.hero-list-item__thumb {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    background: #fec23f;
+    border-radius: 10px;
+}
+
+.hero-list-item:nth-of-type(2) .hero-list-item__thumb {
+    background: #c6e2fa;
+}
+
+.hero-list-item__title {
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #181e52;
+}
+
+.hero-list-item__sekeleton {
+    margin-top: 6px;
+    width: var(--width, 118px);
+    height: 4px;
+    background: #000958;
+    opacity: 0.08;
+    border-radius: 10px;
+}
+
+.hero-list-item__separate {
+    margin: 20px 0;
+    background: #f2f2f2;
+    height: 2px;
+    border-radius: 99px;
 }
