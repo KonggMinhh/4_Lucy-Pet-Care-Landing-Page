@@ -259,3 +259,61 @@ button {
     text-decoration: underline;
     color: #000958;
 }
+
+/* About */
+.about {
+    margin: 77px 0;
+    padding: 53px 0;
+}
+
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 108px;
+}
+
+.about__label {
+    margin-bottom: 15px;
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #5e6085;
+}
+
+.about__desc {
+    width: 431px;
+}
+
+.about__checklist {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 36px;
+}
+.about__check-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #48496a;
+}
+.about__check-item::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: #ff5d31;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+}
+.about__check-item::after {
+    position: absolute;
+    content: url("../icon/checked.svg");
+    top: 2px;
+    left: 4px;
+}
