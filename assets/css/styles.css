@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Sora", sans-serif;
+    font-family: "Sora", sans-serif, sans-serif;
 }
 
 textarea,
@@ -79,7 +79,7 @@ button {
 }
 .section-heading {
     margin-bottom: 24px;
-    font-family: "Sora";
+    font-family: "Sora", sans-serif;
     font-weight: 700;
     font-size: 5.2rem;
     line-height: 1.19;
@@ -212,7 +212,7 @@ button {
 }
 
 .hero-list-item__title {
-    font-family: "Sora";
+    font-family: "Sora", sans-serif;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 1;
@@ -268,13 +268,15 @@ button {
 
 .about__inner {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     column-gap: 108px;
 }
 
+/* About 1 */
 .about__label {
     margin-bottom: 15px;
-    font-family: "Sora";
+    font-family: "Sora", sans-serif;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 1;
@@ -316,4 +318,57 @@ button {
     content: url("../icon/checked.svg");
     top: 2px;
     left: 4px;
+}
+/* About 02 */
+.about__media {
+    position: relative;
+}
+.about__card {
+    position: absolute;
+    padding: 30px 26px;
+    width: 136px;
+    top: 165px;
+    left: -55px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+    border-radius: 10px;
+    text-align: center;
+}
+.about__card-title {
+    font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1;
+    color: #ffffff;
+}
+.about__card-desc {
+    margin-top: 14px;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: #c6f4f9;
+}
+.about__card-decor {
+    position: absolute;
+    top: -40px;
+    right: -32px;
+}
+.about__img-wrapper {
+    position: relative;
+    width: 494px;
+    margin-left: auto;
+}
+.about__img-wrapper::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    z-index: -1;
+    height: 336px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    box-shadow: 11px 18px 65px rgba(255, 155, 121, 0.12);
+    border-radius: 16px;
+}
+.about__img {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
 }
