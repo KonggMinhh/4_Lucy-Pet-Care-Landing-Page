@@ -725,6 +725,7 @@ button {
 .pricing__container {
     width: 994px;
 }
+
 .pricing__inner {
     text-align: center;
 }
@@ -741,7 +742,18 @@ button {
     justify-content: center;
     margin-top: 38px;
 }
-
+.pricing__switch-wrap:has(.pricing__switch-input:checked)
+    ~ .pricing__list-monthly {
+    display: none;
+}
+.pricing__switch-wrap:has(.pricing__switch-input:not(:checked))
+    ~ .pricing__list-yearly {
+    display: none;
+}
+.pricing__switch-wrap:has(.pricing__switch-input:checked)
+    ~ .pricing__list-yearly {
+    display: flex;
+}
 .pricing__switch-label {
     position: relative;
     display: flex;
